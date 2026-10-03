@@ -58,7 +58,7 @@
             <div id="exam" class="collapse">
                 <br>
                 <!-- Форма відправки екзамену -->
-                <form id="questionform" action="#" method="post">
+                <form id="questionform" action="{% url 'onlinecourse:submit' course.id %}" method="post">
                     {% csrf_token %}
 
                     <!-- Цикл по всіх питаннях курсу -->
